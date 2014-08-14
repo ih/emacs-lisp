@@ -53,3 +53,35 @@ fill-column
                       (substring
                        "The quick brown foxes jumped." 16 21)
                       " leaping."))
+;;;;1.9
+(set 'trees '(pine oak palm))
+
+trees
+
+(set trees '(douglas chestnut willow)) ; results in an error because trees => (pine oak palm)
+
+(setq apes '(human gorilla chimpanzee))
+
+apes
+
+(setq counter 0)
+
+(setq counter (+ counter 2))
+
+counter
+
+;;;;1.10
+
+;;;;1.11
+
+;;Generate an error message by evaluating an appropriate symbol that is not within parentheses.
+
+abc
+
+(abc)
+
+(setq count2 0)
+(setq count2 (+ count2 2))
+count2
+
+(message "hello world")
