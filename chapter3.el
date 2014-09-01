@@ -86,3 +86,27 @@ t
 (> 10 5)
 
 nil
+
+;;;3.10
+
+save-excursion (point)
+
+;;;3.11
+
+;;;3.12
+
+(defun double (x)
+  (*  2 x))
+
+(double 12)
+
+(defun double (x)
+  (interactive "n")
+  (message "%d" (* 2 x)))
+
+
+(defun is-greater-than-fill-col (x)
+  (if (> x fill-column)
+      (message "yes greater than fill-column")))
+
+(is-greater-than-fill-col 1000)
